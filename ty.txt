@@ -1,0 +1,61 @@
+$ git config --global user.name vikas123456778009
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder
+$ git config --global user.email vikasdewangan218@gmail.com
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder
+$ git clone https://github.com/vikas123456778009/Practice1.git
+Cloning into 'Practice1'...
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 9 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (9/9), done.
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder
+$ cd Practice1/
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder/Practice1 (main)
+$ git config --global user.name vikas123456778009
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder/Practice1 (main)
+$ git config --global user.email vikasdewangan218@gmail.com
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder/Practice1 (main)
+$ git config --global user.name "vikas123456778009"
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder/Practice1 (main)
+$ git config --global user.email "vikasdewangan218@gmail.com"
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder/Practice1 (main)
+$ git remote -v
+origin  https://github.com/vikas123456778009/Practice1.git (fetch)
+origin  https://github.com/vikas123456778009/Practice1.git (push)
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder/Practice1 (main)
+$ git push origin main ty.txt
+error: src refspec ty.txt does not match any
+error: failed to push some refs to 'https://github.com/vikas123456778009/Practice1.git'
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder/Practice1 (main)
+$ git push origin main
+info: please complete authentication in your browser...
+Everything up-to-date
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder/Practice1 (main)
+$ git push origin main
+Everything up-to-date
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder/Practice1 (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ty.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder/Practice1 (main)
+$ git add ty.txt
