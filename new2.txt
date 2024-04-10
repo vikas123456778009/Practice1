@@ -1,0 +1,125 @@
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder/Practice1 (main)
+$ git branch
+* main
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder/Practice1 (main)
+$ git config --global user.name vikas123456778009
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder/Practice1 (main)
+$ git config --global user.email vikasdewangan218@gmail.com
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder/Practice1 (main)
+$ git branch origin b1
+fatal: not a valid object name: 'b1'
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder/Practice1 (main)
+$ git branch -a
+* main
+  remotes/origin/HEAD -> origin/main
+  remotes/origin/main
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder/Practice1 (main)
+$ git pull
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 8 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (8/8), 106.80 KiB | 1.16 MiB/s, done.
+From https://github.com/vikas123456778009/Practice1
+   0383e43..ff80298  main       -> origin/main
+ * [new branch]      b1         -> origin/b1
+Updating 0383e43..ff80298
+Fast-forward
+ answers.pdf | Bin 0 -> 151078 bytes
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 answers.pdf
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder/Practice1 (main)
+$
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder/Practice1 (main)
+$ git branch
+* main
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder/Practice1 (main)
+$ git branch b11
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder/Practice1 (main)
+$ git branch
+  b11
+* main
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder/Practice1 (main)
+$ git checkout b11
+Switched to branch 'b11'
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder/Practice1 (b11)
+$ git branch
+* b11
+  main
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder/Practice1 (b11)
+$ ls
+answers.pdf  d.txt  exception1.py  hello.txt  new.txt  README.md  test.txt  ty.txt
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder/Practice1 (b11)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder/Practice1 (main)
+$ ls
+answers.pdf  d.txt  exception1.py  hello.txt  new.txt  README.md  test.txt  ty.txt
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder/Practice1 (main)
+$ git checkout b11
+Switched to branch 'b11'
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder/Practice1 (b11)
+$ git log
+commit ff8029830cee4c58b507f820c12f5ed1f415db52 (HEAD -> b11, origin/main, origin/HEAD, main)
+Merge: 0383e43 d641a2c
+Author: vikas123456778009 <50516675+vikas123456778009@users.noreply.github.com>
+Date:   Wed Apr 10 11:28:49 2024 +0530
+
+    Merge pull request #1 from vikas123456778009/b1
+
+    Add files via upload
+
+commit d641a2c5ce03bd18c50fe80a70e191423eb73c95
+Author: vikas123456778009 <50516675+vikas123456778009@users.noreply.github.com>
+Date:   Wed Apr 10 11:14:06 2024 +0530
+
+    Add files via upload
+
+commit 0383e43b8d96e8da21f3e108762a609c99b22c30
+Author: vikas123456778009 <vikasdewangan218@gmail.com>
+Date:   Tue Apr 9 16:03:55 2024 +0530
+
+    remove new
+
+commit 84cfbaa03070335b51ad94462ccf4eb546f66edf
+Merge: c22cf28 5f986da
+Author: vikas123456778009 <vikasdewangan218@gmail.com>
+Date:   Tue Apr 9 16:01:25 2024 +0530
+
+    new
+
+commit 5f986da0dc8c2ba308d38a6bfabc8c9deced4f94
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder/Practice1 (b11)
+$
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder/Practice1 (b11)
+$ git revert ff8029830cee4c58b507f820c12f5ed1f415db52
+error: commit ff8029830cee4c58b507f820c12f5ed1f415db52 is a merge but no -m option was given.
+fatal: revert failed
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder/Practice1 (b11)
+$ git branch
+* b11
+  main
+
+Gaming@DESKTOP-AUEDLHD MINGW64 ~/Documents/git folder/Practice1 (b11)
+$
